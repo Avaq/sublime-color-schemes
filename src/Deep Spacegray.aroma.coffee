@@ -153,14 +153,8 @@ module.exports =
     
     # Functions
     {
-      name: "Function parameters"
-      scope: "variable.parameter.function"
-      settings:
-        foreground: orange
-    }
-    {
-      name: "Function definition"
-      scope: "storage.type.function"
+      name: "Function definitions"
+      scope: "variable.parameter.function, storage.type.function"
       settings:
         foreground: orange
     }
@@ -173,20 +167,8 @@ module.exports =
     
     # Classes
     {
-      name: "Class definition"
-      scope: "entity.name.type.class"
-      settings:
-        foreground: lightYellow
-    }
-    {
-      name: "Known classes"
-      scope: "support.class"
-      settings:
-        foreground: lightYellow
-    }
-    {
-      name: "Inherited classes"
-      scope: "entity.other.inherited-class"
+      name: "Class names"
+      scope: "entity.name.type.class, support.class, entity.other.inherited-class"
       settings:
         foreground: lightYellow
     }
@@ -206,7 +188,6 @@ module.exports =
       scope: "markup.underline.link"
       settings:
         foreground: lightPink
-        fontStyle: "underline"
     }
     {
       name: "Link"

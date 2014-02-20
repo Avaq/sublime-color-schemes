@@ -189,20 +189,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Function parameters</string>
+        <string>Function definitions</string>
         <key>scope</key>
-        <string>variable.parameter.function</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#BF616A</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>Function definition</string>
-        <key>scope</key>
-        <string>storage.type.function</string>
+        <string>variable.parameter.function, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -222,31 +211,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Class definition</string>
+        <string>Class names</string>
         <key>scope</key>
-        <string>entity.name.type.class</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#EBCB8B</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>Known classes</string>
-        <key>scope</key>
-        <string>support.class</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#EBCB8B</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>Inherited classes</string>
-        <key>scope</key>
-        <string>entity.other.inherited-class</string>
+        <string>entity.name.type.class, support.class, entity.other.inherited-class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -275,8 +242,6 @@
         <dict>
           <key>foreground</key>
           <string>#B48EAD</string>
-          <key>fontStyle</key>
-          <string>underline</string>
         </dict>
       </dict>
       <dict>
