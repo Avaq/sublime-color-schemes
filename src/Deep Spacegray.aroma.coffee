@@ -1,29 +1,42 @@
+##
+## Colour definition helper function
+##
+fg = {}
+bg = {}
+Color = (name, color) ->
+  unless typeof name is "string"
+    color = Object.getOwnPropertyNames(name)[0]
+    [name, color] = [color, name[color]]
+  color = "##{color}" unless color.charAt(0) == "#"
+  global[name] = Color[name] = color
+  fg[name] = foreground:color
+  bg[name] = background:color
 
 ##
 ## Define colours.
 ##
 
 # Spacegray original colour panel:
-darkGrey    = "#343D46"
-lightGrey   = "#65737E"
-grey        = "#4F5B66"
-blueGrey    = "#A7ADBA"
-blackGrey   = "#2B303B"
-whiteGrey   = "#C0C5CE"
-lightPink   = "#B48EAD"
-blue        = "#4086CD"
-lightYellow = "#EBCB8B"
-white       = "#EFF1F5"
-lightBlue   = "#8FA1B3"
-cyan        = "#96B5B4"
-green       = "#A3BE8C"
-lightOrange = "#D08770"
-orange      = "#BF616A"
-brown       = "#AB7967"
+Color darkGrey:    '343D46'
+Color lightGrey:   '65737E'
+Color grey:        '4F5B66'
+Color blueGrey:    'A7ADBA'
+Color blackGrey:   '2B303B'
+Color whiteGrey:   'C0C5CE'
+Color lightPink:   'B48EAD'
+Color blue:        '4086CD'
+Color lightYellow: 'EBCB8B'
+Color white:       'EFF1F5'
+Color lightBlue:   '8FA1B3'
+Color cyan:        '96B5B4'
+Color green:       'A3BE8C'
+Color lightOrange: 'D08770'
+Color orange:      'BF616A'
+Color brown:       'AB7967'
 
 # Extended colour panel:
-darkGreen   = "#789D58"
-red         = "#D82D3E"
+Color darkGreen:   '789D58'
+Color red:         'D82D3E'
 
 ##
 ## Define aroma.
@@ -63,62 +76,53 @@ module.exports =
     {
       name: "Keywords"
       scope: "storage, keyword.control, constant"
-      settings:
-        foreground: lightPink
+      settings: fg.lightPink
     }
     {
       name: "Operators"
       scope: "keyword.operator"
-      settings:
-        foreground: lightOrange
+      settings: fg.lightOrange
     }
     
     # Variables.
     {
       name: "Variables"
       scope: "variable"
-      settings:
-        foreground: cyan
+      settings: fg.cyan
     }
     {
       name: "Properties"
       scope: "variable.other.property"
-      settings:
-        foreground: whiteGrey
+      settings: fg.whiteGrey
     }
     {
       name: "Variable assignment"
       scope: "variable.assignment"
-      settings:
-        foreground: blueGrey
+      settings: fg.blueGrey
     }
     
     # Comments.
     {
       name: "Comments"
       scope: "comment, punctuation.definition.comment"
-      settings:
-        foreground: grey
+      settings: fg.grey
     }
     {
       name: "DocBlocks"
       scope: "comment keyword, comment storage"
-      settings:
-        foreground: lightGrey
+      settings: fg.lightGrey
     }
     
     # Regular expressions.
     {
       name: "Regular expressions"
       scope: "string.regexp, string.regexp punctuation.definition.string"
-      settings:
-        foreground: brown
+      settings: fg.brown
     }
     {
       name: "Escaped characters in regular expressions"
       scope: "string.regexp constant.character.escape"
-      settings:
-        foreground: lightOrange
+      settings: fg.lightOrange
     }
     
     
@@ -126,8 +130,7 @@ module.exports =
     {
       name: "Strings"
       scope: "string.quoted, punctuation.definition.string"
-      settings:
-        foreground: green
+      settings: fg.green
     }
     {
       name: "String-embedded source"
@@ -139,38 +142,33 @@ module.exports =
     {
       name: "Escaped characters in strings"
       scope: "string.quoted constant.character.escape"
-      settings:
-        foreground: darkGreen
+      settings: fg.darkGreen
     }
     
     # Numbers
     {
       name: "Numbers"
       scope: "constant.numeric"
-      settings:
-        foreground: lightBlue
+      settings: fg.lightBlue
     }
     
     # Functions
     {
       name: "Function definitions"
       scope: "variable.parameter.function, storage.type.function"
-      settings:
-        foreground: orange
+      settings: fg.orange
     }
     {
       name: "Known functions"
       scope: "support.function"
-      settings:
-        foreground: blue
+      settings: fg.blue
     }
     
     # Classes
     {
       name: "Class names"
       scope: "entity.name.type.class, support.class, entity.other.inherited-class"
-      settings:
-        foreground: lightYellow
+      settings: fg.lightYellow
     }
     
     # Bad practices
@@ -186,14 +184,12 @@ module.exports =
     {
       name: "Underline"
       scope: "markup.underline.link"
-      settings:
-        foreground: lightPink
+      settings: fg.lightPink
     }
     {
       name: "Link"
       scope: "string.other.link"
-      settings:
-        foreground: green
+      settings: fg.green
     }
     
   ]  
