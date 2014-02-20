@@ -148,7 +148,7 @@ module.exports =
       name: "Numbers"
       scope: "constant.numeric"
       settings:
-        foreground: blue
+        foreground: lightBlue
     }
     
     # Functions
