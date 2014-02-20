@@ -66,6 +66,12 @@ module.exports =
       settings:
         foreground: lightPink
     }
+    {
+      name: "Operators"
+      scope: "keyword.operator"
+      settings:
+        foreground: lightOrange
+    }
     
     # Variables.
     {
@@ -84,7 +90,7 @@ module.exports =
       name: "Variable assignment"
       scope: "variable.assignment"
       settings:
-        foreground: cyan
+        foreground: blueGrey
     }
     
     # Comments.
@@ -137,10 +143,24 @@ module.exports =
         foreground: darkGreen
     }
     
+    # Numbers
+    {
+      name: "Numbers"
+      scope: "constant.numeric"
+      settings:
+        foreground: blue
+    }
+    
     # Functions
     {
       name: "Function parameters"
       scope: "variable.parameter.function"
+      settings:
+        foreground: orange
+    }
+    {
+      name: "Function definition"
+      scope: "storage.type.function"
       settings:
         foreground: orange
     }

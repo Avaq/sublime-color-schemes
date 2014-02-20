@@ -55,6 +55,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Operators</string>
+        <key>scope</key>
+        <string>keyword.operator</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#D08770</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Variables</string>
         <key>scope</key>
         <string>variable</string>
@@ -83,7 +94,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#96B5B4</string>
+          <string>#A7ADBA</string>
         </dict>
       </dict>
       <dict>
@@ -167,9 +178,31 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Numbers</string>
+        <key>scope</key>
+        <string>constant.numeric</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4086CD</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Function parameters</string>
         <key>scope</key>
         <string>variable.parameter.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#BF616A</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Function definition</string>
+        <key>scope</key>
+        <string>storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
