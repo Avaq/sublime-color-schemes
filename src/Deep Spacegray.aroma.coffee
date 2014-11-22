@@ -16,7 +16,7 @@ Color = (name, color) ->
 ## Define colours.
 ##
 
-# Spacegray original colour panel:
+# Spacegray original colour palette:
 Color darkGrey:    '343D46'
 Color lightGrey:   '65737E'
 Color grey:        '4F5B66'
@@ -34,7 +34,7 @@ Color lightOrange: 'D08770'
 Color orange:      'BF616A'
 Color brown:       'AB7967'
 
-# Extended colour panel:
+# Extended colour palette:
 Color darkGreen:   '789D58'
 Color red:         'D82D3E'
 
@@ -83,6 +83,11 @@ module.exports =
       scope: "keyword.operator"
       settings: fg.lightOrange
     }
+    {
+      name: "Units"
+      scope: "keyword.other.unit"
+      settings: fg.blue
+    }
 
     # Variables.
     {
@@ -125,7 +130,6 @@ module.exports =
       settings: fg.lightOrange
     }
 
-
     # Strings.
     {
       name: "Strings"
@@ -160,15 +164,29 @@ module.exports =
     }
     {
       name: "Known functions"
-      scope: "support.function"
+      scope: "support.function, meta.function-call"
       settings: fg.blue
     }
 
     # Classes
     {
       name: "Class names"
-      scope: "entity.name.type.class, support.class, entity.other.inherited-class"
+      scope: "entity.name.type.class, support.class, entity.other.inherited-class, entity.name.class"
       settings: fg.lightYellow
+    }
+
+    # XML/HTML
+    {
+      name: "Tags"
+      scope: "punctuation.definition.tag, entity.name.tag"
+      settings:
+        foreground: lightBlue
+        fontStyle: "bold"
+    }
+    {
+      name: "Attributes"
+      scope: "entity.other.attribute-name"
+      settings: fg.cyan
     }
 
     # Bad practices
