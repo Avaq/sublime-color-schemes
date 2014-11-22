@@ -43,13 +43,13 @@ Color red:         'D82D3E'
 ##
 
 module.exports =
-  
+
   # Meta.
   author: "Aldwin \"Avaq\" Vlasblom (http://github.com/Avaq)"
   name: "Deep Spacegray"
   semanticClass: "avaq.spacegray.deep"
   colorSpaceName: "sRGB"
-  
+
   # Gutter.
   gutterSettings:
     background: darkGrey
@@ -57,10 +57,10 @@ module.exports =
     foreground: lightGrey
     selectionBackground: grey
     selectionForeground: blueGrey
-  
+
   # Colour scheme.
   settings: [
-    
+
     # Global settings.
     {
       settings:
@@ -71,7 +71,7 @@ module.exports =
         lineHighlight: darkGrey
         selection: darkGrey
     }
-    
+
     # Keywords.
     {
       name: "Keywords"
@@ -83,7 +83,7 @@ module.exports =
       scope: "keyword.operator"
       settings: fg.lightOrange
     }
-    
+
     # Variables.
     {
       name: "Variables"
@@ -100,7 +100,7 @@ module.exports =
       scope: "variable.assignment"
       settings: fg.blueGrey
     }
-    
+
     # Comments.
     {
       name: "Comments"
@@ -112,7 +112,7 @@ module.exports =
       scope: "comment keyword, comment storage"
       settings: fg.lightGrey
     }
-    
+
     # Regular expressions.
     {
       name: "Regular expressions"
@@ -124,8 +124,8 @@ module.exports =
       scope: "string.regexp constant.character.escape"
       settings: fg.lightOrange
     }
-    
-    
+
+
     # Strings.
     {
       name: "Strings"
@@ -144,14 +144,14 @@ module.exports =
       scope: "string.quoted constant.character.escape"
       settings: fg.darkGreen
     }
-    
+
     # Numbers
     {
       name: "Numbers"
       scope: "constant.numeric"
       settings: fg.lightBlue
     }
-    
+
     # Functions
     {
       name: "Function definitions"
@@ -163,14 +163,14 @@ module.exports =
       scope: "support.function"
       settings: fg.blue
     }
-    
+
     # Classes
     {
       name: "Class names"
       scope: "entity.name.type.class, support.class, entity.other.inherited-class"
       settings: fg.lightYellow
     }
-    
+
     # Bad practices
     {
       name: "PHP Error suppression"
@@ -179,7 +179,14 @@ module.exports =
         foreground: white
         background: red
     }
-    
+    {
+      name: "Invalid"
+      scope: "invalid.illegal"
+      settings:
+        foreground: white
+        background: red
+    }
+
     # Mark up
     {
       name: "Underline"
@@ -191,5 +198,32 @@ module.exports =
       scope: "string.other.link"
       settings: fg.green
     }
-    
-  ]  
+
+    # Git colouring
+    {
+      name: "Inserted"
+      scope: "markup.inserted"
+      settings: fg.green
+    }
+    {
+      name: "Modified"
+      scope: "markup.changed"
+      settings: fg.lightYellow
+    }
+    {
+      name: "Deleted"
+      scope: "markup.deleted"
+      settings: fg.lightOrange
+    }
+    {
+      name: "Ignored"
+      scope: "markup.ignored"
+      settings: fg.white
+    }
+    {
+      name: "Untracked"
+      scope: "markup.untracked"
+      settings: fg.cyan
+    }
+
+  ]

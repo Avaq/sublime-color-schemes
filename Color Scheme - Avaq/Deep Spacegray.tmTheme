@@ -235,6 +235,19 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Invalid</string>
+        <key>scope</key>
+        <string>invalid.illegal</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#EFF1F5</string>
+          <key>background</key>
+          <string>#D82D3E</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Underline</string>
         <key>scope</key>
         <string>markup.underline.link</string>
@@ -253,6 +266,61 @@
         <dict>
           <key>foreground</key>
           <string>#A3BE8C</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Inserted</string>
+        <key>scope</key>
+        <string>markup.inserted</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#A3BE8C</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Modified</string>
+        <key>scope</key>
+        <string>markup.changed</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#EBCB8B</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Deleted</string>
+        <key>scope</key>
+        <string>markup.deleted</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#D08770</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Ignored</string>
+        <key>scope</key>
+        <string>markup.ignored</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#EFF1F5</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Untracked</string>
+        <key>scope</key>
+        <string>markup.untracked</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#96B5B4</string>
         </dict>
       </dict>
     </array>
