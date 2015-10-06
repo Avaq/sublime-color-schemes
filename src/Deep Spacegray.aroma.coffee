@@ -244,4 +244,21 @@ module.exports =
       settings: fg.cyan
     }
 
+    # SublimeLinter colouring
+    {
+      name: "SublimeLinter Error"
+      scope: "sublimelinter.mark.error"
+      settings: fg.lightOrange
+    }
+    {
+      name: "SublimeLinter Warning"
+      scope: "sublimelinter.mark.warning"
+      settings: fg.lightYellow
+    }
+    {
+      name: "SublimeLinter Gutter Mark"
+      scope: "sublimelinter.gutter-mark"
+      settings: fg.white
+    }
+
   ]
