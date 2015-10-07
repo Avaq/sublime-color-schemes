@@ -163,8 +163,8 @@ module.exports =
       settings: fg.orange
     }
     {
-      name: "Known functions"
-      scope: "support.function, meta.function-call"
+      name: "Known to be functions"
+      scope: "support.function, meta.function-call, variable.function"
       settings: fg.blue
     }
 

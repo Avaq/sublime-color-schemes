@@ -211,9 +211,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Known functions</string>
+        <string>Known to be functions</string>
         <key>scope</key>
-        <string>support.function, meta.function-call</string>
+        <string>support.function, meta.function-call, variable.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
